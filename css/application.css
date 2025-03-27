@@ -1,0 +1,75 @@
+:root
+{
+    background: linear-gradient(135deg, rgb(185, 162, 207), rgb(130, 100, 180));
+}
+
+@font-face
+{
+    font-family:"DynaPuff";
+    src:url("fonts/DynaPuff-Bold.ttf");
+    font-weight: bold;
+    font-style:normal;
+}
+@font-face
+{
+    font-family:"Delius";
+    src:url("fonts/Delius-Regular.ttf");
+    font-weight: normal;
+    font-style:normal;
+}
+h1, h2 {
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+h1
+{
+    font-family: "DynaPuff";
+}
+h2
+{
+    font-family: "DynaPuff";
+}
+p
+{
+    font-family: "Delius";
+}
+ul
+{
+    font-family: "Delius";
+}
+img
+{
+    width: 800px;
+    height:450px;
+}
+ul img {
+    width: 400px; 
+    height: 200px; 
+  
+  }
+img {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+    list-style-type: disc; 
+    padding-left: 20px;
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 20px; 
+  }
+  
+  .no-bullet {
+    list-style-type: none; 
+    padding-left: 0; 
+  }
+  
+  li {
+    margin-bottom: 10px; 
+  } 
