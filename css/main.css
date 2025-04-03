@@ -1,0 +1,90 @@
+html, body {
+    height: 100%;
+    background: linear-gradient(135deg, rgb(185, 162, 207), rgb(130, 100, 180));
+}
+@font-face
+{
+    font-family:"DynaPuff";
+    src:url("fonts/DynaPuff-Bold.ttf");
+    font-weight: bold;
+    font-style:normal;
+}
+@font-face
+{
+    font-family:"Delius";
+    src:url("fonts/Delius-Regular.ttf");
+    font-weight: normal;
+    font-style:normal;
+}
+h1, h2 {
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+h1
+{
+    font-family: "DynaPuff";
+}
+h2
+{
+    font-family: "Delius";
+}
+p
+{
+    font-family: "Delius";
+}
+p {
+    max-width: 900px; 
+    line-height: 1.6; 
+    padding: 10px;
+}
+
+  img {
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    object-fit: contain; 
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+  }
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px rgb(108, 66, 119);
+  }
+
+  a:hover {
+    color: rgb(42, 17, 109); 
+    text-shadow: 2px 2px 8px rgba(100, 50, 150, 0.5); 
+  }
+  a {
+    color: rgb(72, 6, 88);
+  }
+  table {
+    width: 100%;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid black;
+}
+table a {
+    text-decoration: none;
+    color: black;
+}
+th {
+    font-family: "Delius" 
+}
+td{
+    font-family: "Delius" 
+}
+th
+{
+  background-color: rgb(172, 125, 196);
+}
+tbody
+{
+  background-color:lightblue;
+}
