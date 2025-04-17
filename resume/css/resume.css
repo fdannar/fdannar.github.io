@@ -1,0 +1,104 @@
+:root {
+  background: linear-gradient(135deg, rgb(185, 162, 207), rgb(130, 100, 180));
+}
+
+/* Basic layout resets */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+h1 {
+  font-family: 'DynaPuff', cursive;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0;
+}
+
+nav ul li {
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Section styling */
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 900px;
+}
+
+/* Section headers */
+h2 {
+  font-family: 'DynaPuff', cursive;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact image */
+section#contact img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Lists */
+ul {
+  font-family: 'Delius', sans-serif;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Table styles */
+table {
+  background-color: white;
+  color: black;
+  margin: 0 auto;
+  width: 90%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px 16px;
+  text-align: left;
+  font-family: 'Delius', sans-serif;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Responsive image for future use */
+img {
+  max-width: 100%;
+  height: auto;
+}
