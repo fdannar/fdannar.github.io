@@ -101,23 +101,5 @@ td {
     word-wrap: break-word;
 }
 
-/* General Table Styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
 
-th, td {
-    border: 2px solid black;
-    padding: 5px;
-    text-align: left;
-}
-
-thead {
-    background-color: rgb(172, 125, 196);
-}
-
-tbody {
-    background-color: lightblue;
-}
 
