@@ -47,6 +47,7 @@
         padding: 10px;
         border: 2px solid black;
         text-align: center;
+        vertical-align: middle; /* Ensures text and images are centered */
       }
 
       th {
@@ -61,10 +62,13 @@
         word-wrap: break-word;
       }
 
+      /* Image Styling */
       img {
-        max-width: 100%;
+        max-width: 120px; /* Ensures images fit within the table */
         height: auto;
         object-fit: contain;
+        margin: 0 auto;
+        display: block;
       }
 
       /* Add some hover effects */
