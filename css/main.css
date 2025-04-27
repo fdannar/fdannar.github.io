@@ -100,3 +100,41 @@ tbody
 td {
     word-wrap: break-word;
 }
+
+/* General Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+thead {
+    background-color: rgb(172, 125, 196);
+}
+
+tbody {
+    background-color: lightblue;
+}
+
+/* Make the table scrollable on smaller screens */
+@media (max-width: 768px) {
+    .responsive-table-wrapper {
+        overflow-x: auto; /* Enables horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+    }
+
+    table {
+        width: auto; /* Allow the table to expand horizontally */
+        min-width: 600px; /* Ensure it doesn't shrink too much */
+    }
+
+    th, td {
+        font-size: 12px; /* Reduce font size on mobile */
+        padding: 8px; /* Slightly reduce padding */
+    }
+}
