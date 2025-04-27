@@ -93,3 +93,6 @@ tbody
 {
   background-color:lightblue;
 }
+td {
+    word-wrap: break-word;
+}
