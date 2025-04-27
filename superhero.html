@@ -34,14 +34,15 @@
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         margin: 20px auto;
+        width: 100%;
         max-width: 100%;
-        height: auto; /* Remove fixed height */
       }
 
       table {
-        border-collapse: collapse;
         width: 100%;
+        border-collapse: collapse;
         margin: 0 auto;
+        table-layout: fixed; /* Ensures columns are evenly distributed */
       }
 
       th, td {
@@ -132,20 +133,4 @@
             <td>Venom</td>
             <td>Eddie Brock</td>
             <td><a href="images/venom.jpg"><img src="images/venom.jpg" alt="pic of Venom"></a></td>
-            <td>Superhuman Strength, Enhanced Agility and Reflexes</td>
-            <td>Sound Waves</td>
-          </tr>
-          <tr>
-            <td>Mrs. Incredibles</td>
-            <td>Helen Parr</td>
-            <td><a href="images/mrs.jpg"><img src="images/mrs.jpg" alt="pic of Mrs. Incredibles"></a></td>
-            <td>Superhuman Elasticity</td>
-            <td>Extreme Cold</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <p><a href="index.html">Home</a></p>
-  </body>
-</html>
+            <td>Superhuman Strength
