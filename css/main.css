@@ -1,124 +1,103 @@
-/* General Reset */
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(135deg, rgb(185, 162, 207), rgb(130, 100, 180));
-  background-size: cover;
-  background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, rgb(185, 162, 207), rgb(130, 100, 180));
+    background-size: cover; 
+    background-attachment: fixed;
 }
 
-/* Custom Fonts */
-@font-face {
-  font-family: "DynaPuff";
-  src: url("fonts/DynaPuff-Bold.ttf");
-  font-weight: bold;
-  font-style: normal;
+@font-face
+{
+    font-family:"DynaPuff";
+    src:url("fonts/DynaPuff-Bold.ttf");
+    font-weight: bold;
+    font-style:normal;
 }
-@font-face {
-  font-family: "Delius";
-  src: url("fonts/Delius-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
+@font-face
+{
+    font-family:"Delius";
+    src:url("fonts/Delius-Regular.ttf");
+    font-weight: normal;
+    font-style:normal;
 }
-
-/* Headings */
 h1, h2 {
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
-h1 {
-  font-family: "DynaPuff";
+h1
+{
+    font-family: "DynaPuff";
 }
-h2, p {
-  font-family: "Delius";
+h2
+{
+    font-family: "Delius";
 }
-
-/* Paragraphs */
+p
+{
+    font-family: "Delius";
+}
 p {
-  max-width: 900px;
-  line-height: 1.6;
-  padding: 10px;
+    max-width: 900px; 
+    line-height: 1.6; 
+    padding: 10px;
 }
 
-/* Links */
-a {
-  color: rgb(72, 6, 88);
-  text-decoration: none;
-}
-a:hover {
-  color: rgb(42, 17, 109);
-  text-shadow: 2px 2px 8px rgba(100, 50, 150, 0.5);
-}
+  img {
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    object-fit: contain; 
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+  }
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px rgb(108, 66, 119);
+  }
 
-/* Images */
-img {
-  max-width: 100%;
-  max-height: 300px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
-  display: block;
-}
-img:hover {
-  transform: scale(1.05);
-  box-shadow: 10px 10px 20px rgb(108, 66, 119);
-}
-
-/* Table Styling */
-table {
-  width: 100%;
-  margin: 20px auto;
-  border: 1px solid black;
-  border-collapse: collapse;
-  table-layout: auto; /* Let table manage its columns naturally */
+  a:hover {
+    color: rgb(42, 17, 109); 
+    text-shadow: 2px 2px 8px rgba(100, 50, 150, 0.5); 
+  }
+  a {
+    color: rgb(72, 6, 88);
+  }
+  table {
+    width: 100%;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the column width */
+    width: 100%;
+    border-collapse: collapse;
 }
 
 th, td {
-  padding: 8px;
-  border: 1px solid black;
-  font-family: "Delius";
-  word-wrap: break-word;
-  text-align: center;
-  vertical-align: middle;
+    padding: 8px;
+    border: 1px solid black;
 }
-
-th {
-  background-color: rgb(172, 125, 196);
-  color: white;
-}
-
-tbody {
-  background-color: lightblue;
-}
-
 table a {
-  color: black;
-  text-decoration: none;
+    text-decoration: none;
+    color: black;
+}
+th {
+    font-family: "Delius" 
+}
+td{
+    font-family: "Delius" 
+}
+th
+{
+  background-color: rgb(172, 125, 196);
+}
+tbody
+{
+  background-color:lightblue;
+}
+td {
+    word-wrap: break-word;
 }
 
-/* Responsive Table for Small Screens */
-@media (max-width: 768px) {
-  table, thead, tbody, th, td, tr {
-    display: block;
-  }
-
-  thead tr {
-    display: none;
-  }
-
-  td {
-    position: relative;
-    padding-left: 50%;
-    text-align: left;
-  }
-
-  td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    font-weight: bold;
-  }
-}
