@@ -1,12 +1,7 @@
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
     background: linear-gradient(135deg, rgb(185, 162, 207), rgb(130, 100, 180));
-    background-size: cover; 
-    background-attachment: fixed;
 }
-
 @font-face
 {
     font-family:"DynaPuff";
@@ -69,10 +64,6 @@ p {
     margin: 20px auto;
     border: 1px solid black;
     border-collapse: collapse;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the column width */
-    width: 100%;
-    border-collapse: collapse;
 }
 
 th, td {
@@ -97,7 +88,3 @@ tbody
 {
   background-color:lightblue;
 }
-td {
-    word-wrap: break-word;
-}
-
