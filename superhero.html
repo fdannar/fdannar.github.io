@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,22 +33,22 @@
       /* Scrollable Table Container */
       .table-container {
         overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
         margin: 20px auto;
         max-width: 100%;
       }
 
       table {
-        width: 100%;
         border-collapse: collapse;
+        width: 100%;
         margin: 0 auto;
-        table-layout: fixed; /* Ensures columns are evenly distributed */
       }
 
       th, td {
         padding: 10px;
         border: 2px solid black;
         text-align: center;
-        vertical-align: middle;
+        vertical-align: middle; /* Ensures text and images are centered */
       }
 
       th {
@@ -64,7 +65,7 @@
 
       /* Image Styling */
       img {
-        max-width: 120px;
+        max-width: 120px; /* Ensures images fit within the table */
         height: auto;
         object-fit: contain;
         margin: 0 auto;
@@ -84,16 +85,6 @@
         display: block;
         text-align: center;
         margin-top: 20px;
-      }
-
-      /* Additional Mobile-Friendly Adjustments */
-      @media (max-width: 768px) {
-        table, th, td {
-          font-size: 14px; /* Decreases font size for smaller screens */
-        }
-        img {
-          max-width: 80px; /* Makes images smaller on mobile */
-        }
       }
     </style>
   </head>
