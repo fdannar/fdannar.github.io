@@ -6,6 +6,35 @@ html, body {
     background-size: cover; 
     background-attachment: fixed;
 }
+@media (max-width: 768px) {
+    html, body {
+        background-size: auto; /* Adjust background for smaller screens */
+        background-attachment: scroll; /* Make background scroll with content */
+    }
+    
+    h1 {
+        font-size: 2rem;  /* Reduce font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;  /* Smaller font size for readability */
+        padding: 8px;
+    }
+
+    img {
+        max-width: 100%; /* Ensure images are responsive */
+        max-height: 200px; /* Adjust height for mobile */
+    }
+
+    .iframe-container {
+        width: 100%; /* Make iframe responsive on mobile */
+        height: auto;
+    }
+}
 @font-face
 {
     font-family:"DynaPuff";
