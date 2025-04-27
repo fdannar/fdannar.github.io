@@ -6,30 +6,6 @@ html, body {
     background-size: cover; 
     background-attachment: fixed;
 }
-@media (max-width: 768px) {
-  table, thead, tbody, th, td, tr {
-    display: block;
-  }
-
-  thead tr {
-    display: none;
-  }
-
-  td {
-    position: relative;
-    padding-left: 50%;
-    text-align: left;
-  }
-
-  td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    font-weight: bold;
-  }
-}
-
 
 @font-face
 {
