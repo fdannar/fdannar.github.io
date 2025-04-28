@@ -90,3 +90,22 @@ tbody
 {
   background-color:lightblue;
 }
+body {
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+iframe {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+/* optional, to make text not so huge on small screens */
+h1, h2, p, ul, li {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
