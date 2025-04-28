@@ -110,3 +110,24 @@ ul img {
         max-width: 80%; /* Adjust image size within .no-bullet */
     }
 }
+/* Container for iframe */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height based on width) */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 30px; /* Space under the iframe */
+}
+
+/* Style the iframe itself */
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Removes default border */
+    border-radius: 15px; /* Match your other rounded styles */
+}
+
