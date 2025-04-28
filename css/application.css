@@ -1,7 +1,9 @@
+/* Root Styles */
 :root {
     background: linear-gradient(135deg, rgb(185, 162, 207), rgb(130, 100, 180));
 }
 
+/* Font Face Definitions */
 @font-face {
     font-family: "DynaPuff";
     src: url("fonts/DynaPuff-Bold.ttf");
@@ -16,6 +18,7 @@
     font-style: normal;
 }
 
+/* Header Styling */
 h1, h2 {
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
@@ -28,60 +31,65 @@ h2 {
     font-family: "DynaPuff";
 }
 
-p {
+/* Paragraph and List Styling */
+p, ul {
     font-family: "Delius";
 }
 
 ul {
-    font-family: "Delius";
     list-style-type: disc;
     padding-left: 20px;
 }
 
-ul img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto; /* Center images in the list */
-    display: block; /* Center images */
-}
-
+/* No bullet point styling */
 .no-bullet {
     list-style-type: none;
     padding-left: 0;
 }
 
+/* List Item Styling */
 li {
     margin-bottom: 10px;
 }
 
-/* Style for all images */
+/* Image Styling */
 img {
     max-width: 100%; /* Ensures images don’t overflow */
     height: auto; /* Maintains aspect ratio */
     border-radius: 15px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin: 0 auto; /* Centers images in their container */
-    display: block; /* Ensures image is block-level, aiding centering */
+    margin: 0 auto; /* Centers images */
+    display: block; /* Block-level display for centering */
 }
 
-/* Hover effect */
+/* Hover effect for images */
 img:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Image inside list styling */
+ul img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Centers images in the list */
+    display: block; /* Ensures image is block-level, aiding centering */
+}
+
+/* Responsive Design */
+
 /* For larger screens (desktop) */
 @media (min-width: 768px) {
     img {
-        max-width: 800px; /* Limit the width of images on large screens */
-        margin: 0 auto; /* Center on large screens */
+        max-width: 800px; /* Limit image width */
+        margin: 0 auto; /* Center the image */
     }
 }
 
 /* For smaller screens (mobile) */
 @media (max-width: 767px) {
     img {
-        max-width: 100%; /* Full width on smaller screens */
-        margin: 0 auto; /* Center on small screens */
+        max-width: 100%; /* Full width on mobile */
+        margin: 0 auto; /* Centers images */
     }
 }
