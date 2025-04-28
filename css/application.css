@@ -36,46 +36,65 @@ ul {
     font-family: "Delius";
 }
 
-img {
-    max-width: 100%;          /* Scales down on mobile */
-    height: auto;             /* Maintains aspect ratio */
-    border-radius: 15px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border: 1px solid red;    /* Temporary border for debugging */
+.image-container {
+    width: 100%;           /* Ensure container resizes */
+    display: flex;         /* Flexbox layout */
+    justify-content: center;
 }
 
-/* Fix for images in <ul> */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid red; /* Temporary border for debugging */
+}
+
 ul img {
     max-width: 100%;
     height: auto;
 }
 
-/* For larger screens, limit the image max-width */
-@media (min-width: 768px) {
+/* For smaller screens (mobile) */
+@media (max-width: 767px) {
     img {
-        max-width: 800px;   /* Limit max width */
-        width: 100%;        /* Ensure it doesn't exceed max width */
-        margin: 0 auto;     /* Center image on larger screens */
-        display: block;     /* Block display for centering */
+        max-width: 100%;   /* Full width for mobile */
+        height: auto;
     }
 
     ul img {
-        max-width: 400px;   /* For smaller images in lists */
+        max-width: 100%;
         height: auto;
     }
 }
 
-/* Hover effect for images */
+/* For larger screens (desktop) */
+@media (min-width: 768px) {
+    .image-container {
+        justify-content: center; /* Ensure images are centered */
+    }
+
+    img {
+        max-width: 800px;     /* Limit image width */
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    ul img {
+        max-width: 400px;
+        height: auto;
+    }
+}
+
 img:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* List styling */
 ul {
     list-style-type: disc;
     padding-left: 20px;
-    border: 1px solid blue;   /* Temporary border for debugging */
 }
 
 .no-bullet {
@@ -85,9 +104,4 @@ ul {
 
 li {
     margin-bottom: 10px;
-}
-
-/* Add container border for debugging */
-.container {
-    border: 1px solid green;   /* Temporary container border */
 }
