@@ -109,3 +109,14 @@ h1, h2, p, ul, li {
   margin-left: auto;
   margin-right: auto;
 }
+li img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  padding-left: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
