@@ -41,6 +41,7 @@ img {
     height: auto;             /* Maintains aspect ratio */
     border-radius: 15px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid red;    /* Temporary border for debugging */
 }
 
 /* Fix for images in <ul> */
@@ -74,6 +75,7 @@ img:hover {
 ul {
     list-style-type: disc;
     padding-left: 20px;
+    border: 1px solid blue;   /* Temporary border for debugging */
 }
 
 .no-bullet {
@@ -85,3 +87,7 @@ li {
     margin-bottom: 10px;
 }
 
+/* Add container border for debugging */
+.container {
+    border: 1px solid green;   /* Temporary container border */
+}
