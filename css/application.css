@@ -29,16 +29,19 @@ body {
 h1, h2 {
     font-family: "DynaPuff";
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 /* Paragraph and List Styling */
 p, ul {
     font-family: "Delius";
+    padding: 0 20px;
+    line-height: 1.6;
 }
 
 ul {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 /* No bullet point styling */
@@ -49,7 +52,7 @@ ul {
 
 /* List Item Styling */
 li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* Image Styling */
@@ -58,7 +61,7 @@ img {
     height: auto;
     border-radius: 15px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin: 0 auto;
+    margin: 20px auto;
     display: block;
 }
 
@@ -68,7 +71,7 @@ img:hover {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Image inside list styling */
+/* Images inside list styling */
 ul img {
     max-width: 100%;
     height: auto;
@@ -80,44 +83,18 @@ ul img {
 .no-bullet img {
     max-width: 400px;
     height: auto;
-    margin: 0 auto;
-}
-
-/* Responsive Design */
-
-/* For larger screens (desktop) */
-@media (min-width: 768px) {
-    img {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    .no-bullet img {
-        max-width: 400px;
-    }
-}
-
-/* For smaller screens (mobile) */
-@media (max-width: 767px) {
-    img {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    .no-bullet img {
-        max-width: 80%;
-    }
+    margin: 10px auto;
 }
 
 /* Container for iframe */
 .iframe-container {
     position: relative;
-    width: 90%; /* Take up most of page width */
-    max-width: 1200px; /* Don't get wider than 1200px */
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
+    width: 95%; /* Nearly full width */
+    max-width: 1400px; /* Max size */
+    height: 80vh; /* 80% of the screen height */
     overflow: hidden;
-    margin: 30px auto; /* Center and give space below */
+    margin: 30px auto;
+    border-radius: 15px;
 }
 
 /* Style the iframe itself */
@@ -129,4 +106,28 @@ ul img {
     height: 100%;
     border: none;
     border-radius: 15px;
+}
+
+/* Responsive Design */
+
+/* For larger screens (desktop) */
+@media (min-width: 768px) {
+    img {
+        max-width: 800px;
+    }
+
+    .no-bullet img {
+        max-width: 400px;
+    }
+}
+
+/* For smaller screens (mobile) */
+@media (max-width: 767px) {
+    img {
+        max-width: 100%;
+    }
+
+    .no-bullet img {
+        max-width: 80%;
+    }
 }
