@@ -76,6 +76,13 @@ ul img {
     display: block; /* Ensures image is block-level, aiding centering */
 }
 
+/* Specifically targeting .no-bullet images */
+.no-bullet img {
+    max-width: 400px; /* Limit image size for .no-bullet images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Centers image */
+}
+
 /* Responsive Design */
 
 /* For larger screens (desktop) */
@@ -84,6 +91,11 @@ ul img {
         max-width: 800px; /* Limit image width */
         margin: 0 auto; /* Center the image */
     }
+
+    /* For .no-bullet images on desktop */
+    .no-bullet img {
+        max-width: 400px; /* Keep the image smaller */
+    }
 }
 
 /* For smaller screens (mobile) */
@@ -91,5 +103,10 @@ ul img {
     img {
         max-width: 100%; /* Full width on mobile */
         margin: 0 auto; /* Centers images */
+    }
+
+    /* For .no-bullet images on mobile */
+    .no-bullet img {
+        max-width: 80%; /* Adjust image size within .no-bullet */
     }
 }
