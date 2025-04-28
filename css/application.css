@@ -43,14 +43,29 @@ img {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
 ul img {
     max-width: 100%; 
     height: auto;
 }
 
-img {
-    border-radius: 15px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+/* For larger screens like desktop */
+@media (min-width: 768px) {
+    img {
+        max-width: 800px; /* Set max width for large screens */
+        width: 100%;      /* Ensure it doesn't go beyond max-width */
+    }
+
+    ul img {
+        max-width: 400px; /* Or adjust this value as needed */
+        height: auto;
+    }
 }
 
 img:hover {
