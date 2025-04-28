@@ -36,16 +36,18 @@ ul
 {
     font-family: "Delius";
 }
-img
-{
-    width: 800px;
-    height:450px;
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 ul img {
-    width: 400px; 
-    height: 200px; 
-  
-  }
+    max-width: 100%; 
+    height: auto;
+}
+
 img {
     border-radius: 15px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
