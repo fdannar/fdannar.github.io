@@ -1,86 +1,79 @@
-:root {
+:root
+{
     background: linear-gradient(135deg, rgb(185, 162, 207), rgb(130, 100, 180));
 }
 
-@font-face {
-    font-family: "DynaPuff";
-    src: url("fonts/DynaPuff-Bold.ttf");
+@font-face
+{
+    font-family:"DynaPuff";
+    src:url("fonts/DynaPuff-Bold.ttf");
     font-weight: bold;
-    font-style: normal;
+    font-style:normal;
 }
-
-@font-face {
-    font-family: "Delius";
-    src: url("fonts/Delius-Regular.ttf");
+@font-face
+{
+    font-family:"Delius";
+    src:url("fonts/Delius-Regular.ttf");
     font-weight: normal;
-    font-style: normal;
+    font-style:normal;
 }
-
 h1, h2 {
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
-
-h1 {
+h1
+{
     font-family: "DynaPuff";
 }
-
-h2 {
+h2
+{
     font-family: "DynaPuff";
 }
-
-p {
+p
+{
     font-family: "Delius";
 }
-
-ul {
+ul
+{
     font-family: "Delius";
 }
-
-.image-container {
-    width: 100%;           /* Ensure container resizes */
-    display: flex;         /* Flexbox layout */
-    justify-content: center;  /* Center images horizontally */
-    align-items: center;      /* Center images vertically if needed */
-}
-
 img {
     max-width: 100%;
     height: auto;
     border-radius: 15px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border: 1px solid red; /* Temporary border for debugging */
-    display: block;
-    margin: 0 auto;  /* Center images within their container */
 }
 
 ul img {
-    max-width: 100%;
+    max-width: 100%; 
     height: auto;
-    display: block;
-    margin: 0 auto;  /* Center images inside <ul> */
 }
 
-/* For smaller screens (mobile) */
-@media (max-width: 767px) {
-    img {
-        max-width: 100%;   /* Full width for mobile */
-        height: auto;
-    }
-
-    ul img {
-        max-width: 100%;
-        height: auto;
-    }
+img {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* For larger screens (desktop) */
-@media (min-width: 768px) {
-    .image-container {
-        justify-content: center; /* Ensure images are centered */
-    }
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
 
-    img {
-        max-width: 800px;     /* Limit image width */
-        width: 100%;
-        margin: 0 auto;
-        display: block
+ul {
+    list-style-type: disc; 
+    padding-left: 20px;
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 20px; 
+  }
+  
+  .no-bullet {
+    list-style-type: none; 
+    padding-left: 0; 
+  }
+  
+  li {
+    margin-bottom: 10px; 
+  } 
+
+
