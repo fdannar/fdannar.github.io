@@ -39,7 +39,8 @@ ul {
 .image-container {
     width: 100%;           /* Ensure container resizes */
     display: flex;         /* Flexbox layout */
-    justify-content: center;
+    justify-content: center;  /* Center images horizontally */
+    align-items: center;      /* Center images vertically if needed */
 }
 
 img {
@@ -48,11 +49,15 @@ img {
     border-radius: 15px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border: 1px solid red; /* Temporary border for debugging */
+    display: block;
+    margin: 0 auto;  /* Center images within their container */
 }
 
 ul img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;  /* Center images inside <ul> */
 }
 
 /* For smaller screens (mobile) */
@@ -78,30 +83,4 @@ ul img {
         max-width: 800px;     /* Limit image width */
         width: 100%;
         margin: 0 auto;
-        display: block;
-    }
-
-    ul img {
-        max-width: 400px;
-        height: auto;
-    }
-}
-
-img:hover {
-    transform: scale(1.05);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.no-bullet {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
+        display: block
