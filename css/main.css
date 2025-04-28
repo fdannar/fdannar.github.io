@@ -52,22 +52,15 @@ p {
     padding: 10px;
 }
 
- img {
+img {
   max-width: 100%;
-  width: auto;
   height: auto;
-  object-fit: contain;
+  display: block;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
-  display: block;
 }
 
-/* On bigger screens, limit the height */
-@media (min-width: 600px) {
-  img {
-    max-height: 300px;
-  }
-}
+
 
   a:hover {
     color: rgb(42, 17, 109); 
