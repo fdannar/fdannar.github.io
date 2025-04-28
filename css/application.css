@@ -1,79 +1,87 @@
-:root
-{
+:root {
     background: linear-gradient(135deg, rgb(185, 162, 207), rgb(130, 100, 180));
 }
 
-@font-face
-{
-    font-family:"DynaPuff";
-    src:url("fonts/DynaPuff-Bold.ttf");
+@font-face {
+    font-family: "DynaPuff";
+    src: url("fonts/DynaPuff-Bold.ttf");
     font-weight: bold;
-    font-style:normal;
+    font-style: normal;
 }
-@font-face
-{
-    font-family:"Delius";
-    src:url("fonts/Delius-Regular.ttf");
+
+@font-face {
+    font-family: "Delius";
+    src: url("fonts/Delius-Regular.ttf");
     font-weight: normal;
-    font-style:normal;
+    font-style: normal;
 }
+
 h1, h2 {
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
-h1
-{
+
+h1 {
     font-family: "DynaPuff";
 }
-h2
-{
+
+h2 {
     font-family: "DynaPuff";
 }
-p
-{
+
+p {
     font-family: "Delius";
 }
-ul
-{
+
+ul {
     font-family: "Delius";
-}
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 ul img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
+    margin: 0 auto; /* Center images in the list */
+    display: block; /* Center images */
 }
 
+.no-bullet {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Style for all images */
 img {
+    max-width: 100%; /* Ensures images don’t overflow */
+    height: auto; /* Maintains aspect ratio */
     border-radius: 15px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 0 auto; /* Centers images in their container */
+    display: block; /* Ensures image is block-level, aiding centering */
 }
 
+/* Hover effect */
 img:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-ul {
-    list-style-type: disc; 
-    padding-left: 20px;
-  }
-  ul {
-    list-style-type: disc;
-    padding-left: 20px; 
-  }
-  
-  .no-bullet {
-    list-style-type: none; 
-    padding-left: 0; 
-  }
-  
-  li {
-    margin-bottom: 10px; 
-  } 
+/* For larger screens (desktop) */
+@media (min-width: 768px) {
+    img {
+        max-width: 800px; /* Limit the width of images on large screens */
+        margin: 0 auto; /* Center on large screens */
+    }
+}
 
-
+/* For smaller screens (mobile) */
+@media (max-width: 767px) {
+    img {
+        max-width: 100%; /* Full width on smaller screens */
+        margin: 0 auto; /* Center on small screens */
+    }
+}
