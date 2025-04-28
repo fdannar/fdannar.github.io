@@ -48,10 +48,12 @@ ul img {
     img {
         max-width: 800px; /* Set max width for large screens */
         width: 100%;      /* Ensure it doesn't go beyond max-width */
+        margin: 0 auto;   /* Center image on large screens */
+        display: block;   /* Block display for centering */
     }
 
     ul img {
-        max-width: 400px; /* Or adjust this value as needed */
+        max-width: 400px;
         height: auto;
     }
 }
