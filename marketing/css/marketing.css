@@ -14,8 +14,13 @@
 }
 
 
+body {
+  font-family: "Delius", sans-serif;
+}
 
-
+h1, h2 {
+  font-family: "Tinos", serif;
+}
 
 .header-img {
   width: 100%;
